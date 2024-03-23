@@ -11,6 +11,29 @@ let menuButton = document.getElementById("menu-button")
 let homepageButton = document.getElementById("homepage-button")
 let contactButton = document.getElementById("contact-button")
 
-menuButton.addEventListener("click", menuPage)
-homepageButton.addEventListener("click", homePage)
-contactButton.addEventListener("click", contactPage)
+menuButton.addEventListener("click", openMenuPage)
+homepageButton.addEventListener("click", openHomePage)
+contactButton.addEventListener("click", openContactPage)
+
+const content = document.getElementById("content")
+
+function openMenuPage() {
+    while (content.firstChild) {
+        content.removeChild(content.firstChild)
+    }
+    menuPage()
+}
+
+function openContactPage() {
+    while (content.firstChild) {
+        content.removeChild(content.firstChild)
+    }
+    contactPage()
+}
+
+function openHomePage() {
+    while (content.firstChild) {
+        content.removeChild(content.firstChild)
+    }
+    homePage()
+}
