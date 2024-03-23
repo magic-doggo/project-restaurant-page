@@ -1,5 +1,5 @@
-const menu = function() {
-    const content = document.getElementById("content") //can this be put somewhere else, so it is not repeated in each tab
+const menuPage = function() {
+    // const content = document.getElementById("content") //can this be put somewhere else, so it is not repeated in each tab
 
     const menuItem = document.createElement("div")
     menuItem.innerHTML = "Our menu consists of pizza, pizza and more pizza! That's all you need to know."
@@ -7,4 +7,4 @@ const menu = function() {
     content.appendChild(menuItem)
 }
 
-export {menu}
+export {menuPage}
