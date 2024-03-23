@@ -1,4 +1,4 @@
-const pageLoad = function() { //function loadPage() ?
+const homePage = function() { //function loadPage() ?
     const content = document.getElementById("content")
 
     const title = document.createElement("h1");
@@ -17,4 +17,4 @@ const pageLoad = function() { //function loadPage() ?
     content.appendChild(filler)
 }
 
-export {pageLoad}
+export {homePage}
